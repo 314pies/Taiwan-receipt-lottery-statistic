@@ -14,15 +14,6 @@ area_list = ['臺北市', '新北市', '桃園市', '臺中市', '臺南市', '�
 
 item_list = ['食品', '飲品', '菸品', '停車', '汽油', '其他']
 
-period_list = ['10201', '10203', '10205', '10207', '10209', '10211',
-              # '10301', '10303', '10305', '10307', '10309', '10311',
-               #'10401', '10403', '10405', '10407', '10409', '10411',
-               #'10501', '10503', '10505', '10507', '10509', '10511',
-               '10601', '10603', '10605', '10607', '10609', '10611',
-               '10701', '10703', '10705', '10707', '10709',
-               '10801', '10803', '10805', '10807', '10809']
-
-
 def winners_count(period, table_id):
     url = 'https://www.etax.nat.gov.tw/etw-main/web/ETW183W3_' + period
     html = requests.get(url).content.decode('utf-8')
@@ -101,6 +92,7 @@ def GenerateFig(period):
     return bar_chart()
 
 #Testing Code
-fff = GenerateFig('10303')
-fff.savefig('ResultFig2.png')
-print('Fig Saved.')
+def GenerateFigTest():
+    fff = GenerateFig('10303')
+    fff.savefig('ResultFig2.png')
+    print('Fig Saved.')

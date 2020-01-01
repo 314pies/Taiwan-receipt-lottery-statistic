@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -18,16 +25,44 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Projects\Python\Taiwan-receipt-lottery-statistic\static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="FigGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="WeatherApp_FullCode-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FigGenerator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WeatherApp_FullCode-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -53,6 +88,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.FigGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -81,6 +117,8 @@
       <workItem from="1577870454476" duration="85000" />
       <workItem from="1577870721178" duration="2520000" />
       <workItem from="1577873870171" duration="823000" />
+      <workItem from="1577875673949" duration="5534000" />
+      <workItem from="1577882883691" duration="2967000" />
     </task>
     <servers />
   </component>
@@ -88,37 +126,50 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#Notifications" timestamp="1577879723026">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Notifications/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577879723026" />
     <state x="-1755" y="-34" key="FileChooserDialogImpl" timestamp="1577871447092">
       <screen x="-2560" y="-366" width="2048" height="1152" />
     </state>
     <state x="-1755" y="-34" key="FileChooserDialogImpl/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871447092" />
-    <state width="1877" height="248" key="GridCell.Tab.0.bottom" timestamp="1577874729983">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1577885852566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871641845" />
-    <state width="1877" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874729983" />
-    <state width="1877" height="248" key="GridCell.Tab.0.center" timestamp="1577874729983">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577885852566" />
+    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1577885852565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871641845" />
-    <state width="1877" height="248" key="GridCell.Tab.0.center/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874729983" />
-    <state width="1877" height="248" key="GridCell.Tab.0.left" timestamp="1577874729983">
+    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577885852565" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1577885852565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871641845" />
-    <state width="1877" height="248" key="GridCell.Tab.0.left/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874729983" />
-    <state width="1877" height="248" key="GridCell.Tab.0.right" timestamp="1577874729983">
+    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577885852565" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1577885852566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871641845" />
-    <state width="1877" height="248" key="GridCell.Tab.0.right/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874729983" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1577874540520">
+    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577885852566" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1577879712573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874540520" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577879712573" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577882883550">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577882883550" />
+    <state x="-966" y="-366" width="461" height="1158" key="dock-window-1" timestamp="1577881123805">
+      <screen x="-2560" y="-366" width="2048" height="1152" />
+    </state>
+    <state x="-966" y="-366" width="461" height="1158" key="dock-window-1/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577881123805" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Taiwan_receipt_lottery_statistic$main.coverage" NAME="main Coverage Results" MODIFIED="1577874729977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Taiwan_receipt_lottery_statistic$main.coverage" NAME="main Coverage Results" MODIFIED="1577885852561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Taiwan_receipt_lottery_statistic$FigGenerator.coverage" NAME="FigGenerator Coverage Results" MODIFIED="1577879494959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WeatherApp_FullCode_master$main.coverage" NAME="main Coverage Results" MODIFIED="1577871641841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
