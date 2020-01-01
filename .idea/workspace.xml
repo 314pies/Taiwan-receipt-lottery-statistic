@@ -80,7 +80,7 @@
       <updated>1577869740435</updated>
       <workItem from="1577870454476" duration="85000" />
       <workItem from="1577870721178" duration="2520000" />
-      <workItem from="1577873870171" duration="677000" />
+      <workItem from="1577873870171" duration="823000" />
     </task>
     <servers />
   </component>
@@ -92,33 +92,33 @@
       <screen x="-2560" y="-366" width="2048" height="1152" />
     </state>
     <state x="-1755" y="-34" key="FileChooserDialogImpl/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871447092" />
-    <state width="1877" height="248" key="GridCell.Tab.0.bottom" timestamp="1577874608673">
+    <state width="1877" height="248" key="GridCell.Tab.0.bottom" timestamp="1577874729983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871641845" />
-    <state width="1877" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874608673" />
-    <state width="1877" height="248" key="GridCell.Tab.0.center" timestamp="1577874608673">
+    <state width="1877" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874729983" />
+    <state width="1877" height="248" key="GridCell.Tab.0.center" timestamp="1577874729983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871641845" />
-    <state width="1877" height="248" key="GridCell.Tab.0.center/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874608673" />
-    <state width="1877" height="248" key="GridCell.Tab.0.left" timestamp="1577874608673">
+    <state width="1877" height="248" key="GridCell.Tab.0.center/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874729983" />
+    <state width="1877" height="248" key="GridCell.Tab.0.left" timestamp="1577874729983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871641845" />
-    <state width="1877" height="248" key="GridCell.Tab.0.left/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874608673" />
-    <state width="1877" height="248" key="GridCell.Tab.0.right" timestamp="1577874608673">
+    <state width="1877" height="248" key="GridCell.Tab.0.left/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874729983" />
+    <state width="1877" height="248" key="GridCell.Tab.0.right" timestamp="1577874729983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-2560.-366.2048.1152@-2560.-366.2048.1152" timestamp="1577871641845" />
-    <state width="1877" height="248" key="GridCell.Tab.0.right/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874608673" />
+    <state width="1877" height="248" key="GridCell.Tab.0.right/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874729983" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1577874540520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/-2560.-366.2048.1152@0.0.1920.1040" timestamp="1577874540520" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Taiwan_receipt_lottery_statistic$main.coverage" NAME="main Coverage Results" MODIFIED="1577874608668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Taiwan_receipt_lottery_statistic$main.coverage" NAME="main Coverage Results" MODIFIED="1577874729977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WeatherApp_FullCode_master$main.coverage" NAME="main Coverage Results" MODIFIED="1577871641841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
