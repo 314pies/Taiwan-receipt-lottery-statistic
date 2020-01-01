@@ -58,7 +58,9 @@ def winner_sum(period_list, item_sum_1000, area_sum_1000, item_sum_200, area_sum
 
 
 def bar_chart():
-    font = FontProperties(fname=os.environ['WINDIR'] + '\\Fonts\\kaiu.ttf', size=12)
+    font = FontProperties(fname='kaiu.ttf', size=12)
+    #font = FontProperties()
+
     f = Figure(figsize=(16, 9))
 
     a = f.add_subplot(211)
