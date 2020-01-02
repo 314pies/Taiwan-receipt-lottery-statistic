@@ -83,7 +83,7 @@ def GenerateFig(period):
     area_sum_200 = np.zeros(len(area_list))
 
     # print('bef: ' + str(item_sum_1000))
-    selected_period = [period]
+    selected_period = period
     thread1 = threading.Thread(target=winner_sum, args=(
         selected_period[:len(selected_period) // 2], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200))
     thread2 = threading.Thread(target=winner_sum, args=(
