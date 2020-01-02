@@ -40,13 +40,6 @@ def winners_count(period, table_id):
 
     return item_count, area_count
 
-
-item_sum_1000 = np.zeros(len(item_list))
-area_sum_1000 = np.zeros(len(area_list))
-item_sum_200 = np.zeros(len(item_list))
-area_sum_200 = np.zeros(len(area_list))
-
-
 def winner_sum(period_list, item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     for period in period_list:
         item_count_1000, area_count_1000 = winners_count(period, 'fbonly')
@@ -57,7 +50,7 @@ def winner_sum(period_list, item_sum_1000, area_sum_1000, item_sum_200, area_sum
         area_sum_200 += list(area_count_200.values())
 
 
-def bar_chart():
+def bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     font = FontProperties(fname='kaiu.ttf', size=12)
     #font = FontProperties()
 
@@ -74,13 +67,19 @@ def bar_chart():
     b.bar(np.arange(len(area_list)) + 0.2, area_sum_200, width=0.4, label='200萬')
     b.set_xticks(np.arange(len(area_list)))
     b.set_xticklabels(area_list, fontproperties=font)
-
+    #print('aft: ' + str(item_sum_1000))
     print('Generated Fig: ' + str(f))
     #f.savefig('ResultFig.png')
     return f
 
 
 def GenerateFig(period):
+    item_sum_1000 = np.zeros(len(item_list))
+    area_sum_1000 = np.zeros(len(area_list))
+    item_sum_200 = np.zeros(len(item_list))
+    area_sum_200 = np.zeros(len(area_list))
+
+    #print('bef: ' + str(item_sum_1000))
     selected_period = [period]
     thread1 = threading.Thread(target=winner_sum, args=(
         selected_period[:len(selected_period) // 2], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200))
@@ -91,7 +90,7 @@ def GenerateFig(period):
     thread1.join()
     thread2.join()
     print('Data collect complete. Generating Fig.')
-    return bar_chart()
+    return bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200)
 
 #Testing Code
 def GenerateFigTest():
