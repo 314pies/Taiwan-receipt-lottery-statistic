@@ -44,14 +44,15 @@ def winners_count(period, table_id):
     return item_count, area_count
 
 
-def winner_sum(period_list, item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
+def winner_sum(period_list, lock, item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     for period in period_list:
         item_count_1000, area_count_1000 = winners_count(period, 'fbonly')
         item_count_200, area_count_200 = winners_count(period, 'fbonly_200')
-        item_sum_1000 += list(item_count_1000.values())
-        area_sum_1000 += list(area_count_1000.values())
-        item_sum_200 += list(item_count_200.values())
-        area_sum_200 += list(area_count_200.values())
+        with lock:
+            item_sum_1000 += list(item_count_1000.values())
+            area_sum_1000 += list(area_count_1000.values())
+            item_sum_200 += list(item_count_200.values())
+            area_sum_200 += list(area_count_200.values())
 
 
 def bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
@@ -89,8 +90,9 @@ def GenerateFig(period):
     start_time = time.time()
     selected_period = period
 
+    lock = threading.Lock()
     pool = ThreadPoolExecutor(max_workers=len(selected_period))
-    all_task = [pool.submit(winner_sum, [url], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200)
+    all_task = [pool.submit(winner_sum, [url], lock, item_sum_1000, area_sum_1000, item_sum_200, area_sum_200)
                 for url in selected_period]
     completed_thread = 0
     for future in as_completed(all_task):
