@@ -117,7 +117,7 @@ def GenerateFig(period):
     completed_thread = 0
     for future in as_completed(all_task):
         completed_thread += 1
-        print('Period '+str(future.result()) + ' completed. completed thread: ' + str(completed_thread) + '/' + str(len(selected_period)))
+        print('Period ' + str(future.result()) + ' completed. completed thread: ' + str(completed_thread) + '/' + str(len(selected_period)))
 
     # thread1 = threading.Thread(target=winner_sum, args=(
     #     selected_period[:len(selected_period) // 2], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200))
