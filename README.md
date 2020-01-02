@@ -27,10 +27,11 @@ The following messages should be printed in the console.
 
 Credits
 ------------
+[yxliaoyx's web crawler](https://github.com/yxliaoyx/Python-homework/blob/master/Final%20Project/Final_Project.py)
 [Flask](https://github.com/pallets/flask)  
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)  
 [Matplotlib](https://matplotlib.org/)  
 [How to show matplotlib in flask](https://stackoverflow.com/questions/50728328/python-how-to-show-matplotlib-in-flask)  
 [TheWeatherApp](https://github.com/tristanga/WeatherApp_FullCode)  
 [Deploying a Web Application on Google App Engine](https://youtu.be/j_zD8jfVQJ4)  
-[How to output requirements.txt automatically?](https://stackoverflow.com/questions/29715249/is-there-any-way-to-output-requirements-txt-automatically)
+[How to output requirements.txt automatically?](https://stackoverflow.com/questions/29715249/is-there-any-way-to-output-requirements-txt-automatically)  
