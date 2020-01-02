@@ -1,6 +1,7 @@
 Taiwan receipt lottery statistic
 =====
-A web-app made by [Flask](https://github.com/pallets/flask) framework showing the annual statistics of  Taiwan receipt lottery.  
+A web-app made by [Flask](https://github.com/pallets/flask) framework showing the annual statistics of  Taiwan receipt lottery, all the data shown in the chart are gathered from the Taiwan Ministry of Finance official site at real-time. ([source](https://www.etax.nat.gov.tw/etw-main/web/ETW183W1/))  
+
 This is a complete project ready to be directly deployed on [Google App Engine](https://cloud.google.com/appengine/)
 
 
