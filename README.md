@@ -15,9 +15,18 @@ Try it Yourself: https://tw-lottery-statistic.appspot.com/
 Installation
 ----------------
 1. Clone this repository
+     ```
+    git clone https://github.com/314pies/Taiwan-receipt-lottery-statistic/edit/master/README.md
+    ```
 2. Setup a Python 3 environment and install all the dependency listed in requirements.txt
+    ```
+    pip3 install -r requirements.txt
+    ```
 3.  Run main.py, then enter http://127.0.0.1:5000/  in your browser. 
-The following messages should be printed to the console.
+    ```
+    python main.py
+    ```
+    The following messages should be printed to the console.
     ```
      * Restarting with stat
      * Debugger is active!
