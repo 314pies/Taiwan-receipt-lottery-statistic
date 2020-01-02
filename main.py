@@ -19,7 +19,7 @@ period_list = ['10201', '10203', '10205', '10207', '10209', '10211',
 @app.route('/')
 def index():
     data = []
-    for period in period_list:
+    for period in reversed(period_list):
         data.append({'name':period})
 
     return render_template(
