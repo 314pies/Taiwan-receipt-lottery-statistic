@@ -14,6 +14,7 @@ area_list = ['臺北市', '新北市', '桃園市', '臺中市', '臺南市', '�
 
 item_list = ['食品', '飲品', '菸品', '停車', '汽油', '其他']
 
+
 def winners_count(period, table_id):
     url = 'https://www.etax.nat.gov.tw/etw-main/web/ETW183W3_' + period
     html = requests.get(url).content.decode('utf-8')
@@ -40,6 +41,7 @@ def winners_count(period, table_id):
 
     return item_count, area_count
 
+
 def winner_sum(period_list, item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     for period in period_list:
         item_count_1000, area_count_1000 = winners_count(period, 'fbonly')
@@ -52,7 +54,7 @@ def winner_sum(period_list, item_sum_1000, area_sum_1000, item_sum_200, area_sum
 
 def bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     font = FontProperties(fname='kaiu.ttf', size=12)
-    #font = FontProperties()
+    # font = FontProperties()
 
     f = Figure(figsize=(16, 9))
 
@@ -67,9 +69,9 @@ def bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     b.bar(np.arange(len(area_list)) + 0.2, area_sum_200, width=0.4, label='200萬')
     b.set_xticks(np.arange(len(area_list)))
     b.set_xticklabels(area_list, fontproperties=font)
-    #print('aft: ' + str(item_sum_1000))
+    # print('aft: ' + str(item_sum_1000))
     print('Generated Fig: ' + str(f))
-    #f.savefig('ResultFig.png')
+    # f.savefig('ResultFig.png')
     return f
 
 
@@ -79,7 +81,7 @@ def GenerateFig(period):
     item_sum_200 = np.zeros(len(item_list))
     area_sum_200 = np.zeros(len(area_list))
 
-    #print('bef: ' + str(item_sum_1000))
+    # print('bef: ' + str(item_sum_1000))
     selected_period = [period]
     thread1 = threading.Thread(target=winner_sum, args=(
         selected_period[:len(selected_period) // 2], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200))
@@ -89,10 +91,17 @@ def GenerateFig(period):
     thread2.start()
     thread1.join()
     thread2.join()
+
+    print("1000萬 item " + str(dict(zip(item_list, item_sum_1000))))
+    print("200萬 item " + str(dict(zip(item_list, item_sum_200))))
+
+    print("1000萬 area " + str(dict(zip(area_list, area_sum_1000))))
+    print("200萬 area " + str(dict(zip(area_list, area_sum_200))))
     print('Data collect complete. Generating Fig.')
     return bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200)
 
-#Testing Code
+
+# Testing Code
 def GenerateFigTest():
     fff = GenerateFig('10303')
     fff.savefig('ResultFig2.png')
