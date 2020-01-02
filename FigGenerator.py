@@ -65,10 +65,11 @@ def bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     a.set_xticklabels(item_list, fontproperties=font)
 
     b = f.add_subplot(212)
-    b.bar(np.arange(len(area_list)) - 0.2, area_sum_1000, width=0.4, label='1000萬')
-    b.bar(np.arange(len(area_list)) + 0.2, area_sum_200, width=0.4, label='200萬')
+    b.bar(np.arange(len(area_list)) - 0.2, area_sum_1000, width=0.4)
+    b.bar(np.arange(len(area_list)) + 0.2, area_sum_200, width=0.4)
     b.set_xticks(np.arange(len(area_list)))
     b.set_xticklabels(area_list, fontproperties=font)
+    f.legend(prop=font, loc='best')
     # print('aft: ' + str(item_sum_1000))
     print('Generated Fig: ' + str(f))
     # f.savefig('ResultFig.png')
