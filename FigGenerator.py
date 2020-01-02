@@ -55,6 +55,7 @@ def winner_sum(period_list, lock, item_sum_1000, area_sum_1000, item_sum_200, ar
             area_sum_200 += list(area_count_200.values())
 
 
+
 def bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     font = FontProperties(fname='kaiu.ttf', size=12)
     # font = FontProperties()
@@ -62,17 +63,35 @@ def bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     f = Figure(figsize=(16, 9))
 
     a = f.add_subplot(211)
-    a.bar(np.arange(len(item_list)) - 0.2, item_sum_1000, width=0.4, label='1000萬')
-    a.bar(np.arange(len(item_list)) + 0.2, item_sum_200, width=0.4, label='200萬')
+    item_1000_rects = a.bar(np.arange(len(item_list)) - 0.2, item_sum_1000, width=0.4, label='1000萬')
+    item_200_rects = a.bar(np.arange(len(item_list)) + 0.2, item_sum_200, width=0.4, label='200萬')
     a.set_xticks(np.arange(len(item_list)))
     a.set_xticklabels(item_list, fontproperties=font)
 
     b = f.add_subplot(212)
-    b.bar(np.arange(len(area_list)) - 0.2, area_sum_1000, width=0.4)
-    b.bar(np.arange(len(area_list)) + 0.2, area_sum_200, width=0.4)
+    area_1000_rects = b.bar(np.arange(len(area_list)) - 0.2, area_sum_1000, width=0.4)
+    area_200_rects = b.bar(np.arange(len(area_list)) + 0.2, area_sum_200, width=0.4)
     b.set_xticks(np.arange(len(area_list)))
     b.set_xticklabels(area_list, fontproperties=font)
     f.legend(prop=font)
+
+    def autolabel(ax, rects):
+        """
+        Attach a text label above each bar displaying its height
+        """
+        for rect in rects:
+            height = rect.get_height()
+            ax.text(rect.get_x() + rect.get_width() / 2., 1 * height,
+                    '%d' % int(height),
+                    ha='center', va='bottom')
+
+    autolabel(a, item_1000_rects)
+    autolabel(a, item_200_rects)
+
+    autolabel(b, area_1000_rects)
+    autolabel(b, area_200_rects)
+
+    #autolabel(rects2)
     # print('aft: ' + str(item_sum_1000))
     print('Generated Fig: ' + str(f))
     # f.savefig('ResultFig.png')
