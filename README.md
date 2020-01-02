@@ -1,7 +1,7 @@
 Taiwan receipt lottery statistic
 =====
 A web-app made by [Flask](https://github.com/pallets/flask) framework showing the annual statistics of  Taiwan receipt lottery.  
-This is a complete project ready to be deployed on [Google App Engine](https://cloud.google.com/appengine/)
+This is a complete project ready to be directly deployed on [Google App Engine](https://cloud.google.com/appengine/)
 
 
 Showcase
