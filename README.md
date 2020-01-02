@@ -27,7 +27,7 @@ The following messages should be printed in the console.
 
 Credits
 ------------
-[yxliaoyx's web crawler](https://github.com/yxliaoyx/Python-homework/blob/master/Final%20Project/Final_Project.py)
+[yxliaoyx's web crawler](https://github.com/yxliaoyx/Python-homework/blob/master/Final%20Project/Final_Project.py)  
 [Flask](https://github.com/pallets/flask)  
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)  
 [Matplotlib](https://matplotlib.org/)  
