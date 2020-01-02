@@ -30,13 +30,19 @@ periodCache = ''
 @app.route("/result" , methods=['GET', 'POST'])
 def result():
     error = None
-    select = request.form.get('comp_select')
+    select = request.form.getlist('comp_select')
     print('Received req for:'+ str(select))
     global periodCache
     periodCache = select
-    data = [{
-        'name': periodCache,
-    }]
+    if len(periodCache) == 1:
+        data = [{
+            'name': periodCache[0],
+        }]
+    else:
+        data = [{
+            'name': periodCache,
+        }]
+
     return render_template(
         'result.html',
         data=data,

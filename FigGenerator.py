@@ -1,3 +1,5 @@
+from concurrent.futures import ThreadPoolExecutor,as_completed
+import time
 from bs4 import BeautifulSoup
 import requests
 
@@ -83,15 +85,28 @@ def GenerateFig(period):
     area_sum_200 = np.zeros(len(area_list))
 
     # print('bef: ' + str(item_sum_1000))
-    selected_period = [period]
-    thread1 = threading.Thread(target=winner_sum, args=(
-        selected_period[:len(selected_period) // 2], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200))
-    thread2 = threading.Thread(target=winner_sum, args=(
-        selected_period[len(selected_period) // 2:], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200))
-    thread1.start()
-    thread2.start()
-    thread1.join()
-    thread2.join()
+
+    start_time = time.time()
+    selected_period = period
+
+    pool = ThreadPoolExecutor(max_workers=len(selected_period))
+    all_task = [pool.submit(winner_sum, [url], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200)
+                for url in selected_period]
+    completed_thread = 0
+    for future in as_completed(all_task):
+        completed_thread += 1
+        print('CompletedThread: ' + str(completed_thread))
+
+    # thread1 = threading.Thread(target=winner_sum, args=(
+    #     selected_period[:len(selected_period) // 2], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200))
+    # thread2 = threading.Thread(target=winner_sum, args=(
+    #     selected_period[len(selected_period) // 2:], item_sum_1000, area_sum_1000, item_sum_200, area_sum_200))
+    # thread1.start()
+    # thread2.start()
+    # thread1.join()
+    # thread2.join()
+
+    print('Time Spent: ' + str(time.time() - start_time))
 
     print("1000萬 item " + str(dict(zip(item_list, item_sum_1000))))
     print("200萬 item " + str(dict(zip(item_list, item_sum_200))))
