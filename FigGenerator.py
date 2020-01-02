@@ -69,7 +69,7 @@ def bar_chart(item_sum_1000, area_sum_1000, item_sum_200, area_sum_200):
     b.bar(np.arange(len(area_list)) + 0.2, area_sum_200, width=0.4)
     b.set_xticks(np.arange(len(area_list)))
     b.set_xticklabels(area_list, fontproperties=font)
-    f.legend(prop=font, loc='best')
+    f.legend(prop=font)
     # print('aft: ' + str(item_sum_1000))
     print('Generated Fig: ' + str(f))
     # f.savefig('ResultFig.png')
