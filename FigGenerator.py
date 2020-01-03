@@ -35,6 +35,11 @@ def winners_count(period, table_id):
             if itemId in itemsStr:
                 item_count[itemId] += 1
                 anyItemFound = True
+
+        if '飲料' in itemsStr:
+            item_count['飲品'] += 1
+            anyItemFound = True
+
         if anyItemFound == False:
             item_count['其他'] += 1
         # item = row_tds[4].text[:2]
