@@ -5,6 +5,7 @@ from flask import Response
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import FigGenerator
 import io
+import ast
 
 app = Flask(__name__)
 
@@ -26,22 +27,19 @@ def index():
         'index.html',
         data = data)
 
-periodCache = ''
 @app.route("/result" , methods=['GET', 'POST'])
 def result():
     error = None
     select = request.form.getlist('comp_select')
     print('Received req for:'+ str(select))
-    global periodCache
-    periodCache = select
-    if len(periodCache) == 1:
-        data = [{
-            'name': periodCache[0],
-        }]
-    else:
-        data = [{
-            'name': periodCache,
-        }]
+    data = {
+        'periodList': select,
+        'name': select
+    }
+
+    if len(select) == 1:
+        data['name'] = select[0]
+
 
     return render_template(
         'result.html',
@@ -50,12 +48,14 @@ def result():
 
 @app.route('/plot.png')
 def plot_png():
-    global periodCache
-    print('Generating Fig for: ' + str(periodCache))
-    fig = FigGenerator.GenerateFig(periodCache)
+    _p = request.args.get('period')
+    print('get req data: ' + _p)
+    periodList = ast.literal_eval(str(_p))
+    print('Generating Fig for: ' + str(periodList))
+    fig = FigGenerator.GenerateFig(periodList)
     output = io.BytesIO()
     FigureCanvas(fig).print_png(output)
-    print('Generating Fig completed: ' + str(periodCache))
+    print('Fig generation completed: ' + str(periodList))
     return Response(output.getvalue(), mimetype='image/png')
 
 if __name__=='__main__':
