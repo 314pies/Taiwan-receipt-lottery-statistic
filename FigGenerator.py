@@ -28,11 +28,21 @@ def winners_count(period, table_id):
     item_count = dict.fromkeys(item_list, 0)
     for row in rows[1:]:
         row_tds = row.find_all('td')
-        item = row_tds[4].text[:2]
-        try:
-            item_count[item] += 1
-        except:
+
+        itemsStr = row_tds[4].text
+        anyItemFound = False
+        for itemId in item_list:
+            if itemId in itemsStr:
+                item_count[itemId] += 1
+                anyItemFound = True
+        if anyItemFound == False:
             item_count['其他'] += 1
+        # item = row_tds[4].text[:2]
+        # for _itemId in item
+        # try:
+        #     item_count[item] += 1
+        # except:
+        #     item_count['其他'] += 1
 
         area = row_tds[3].text[:3]
         try:
