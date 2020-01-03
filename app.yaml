@@ -1,9 +1,3 @@
 runtime: python37
 
-instance_class: F4
-
-automatic_scaling:
-  min_idle_instances: 0
-  max_idle_instances: automatic
-  min_pending_latency: automatic
-  max_pending_latency: automatic
+instance_class: F2
