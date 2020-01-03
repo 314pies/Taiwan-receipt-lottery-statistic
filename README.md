@@ -16,7 +16,7 @@ Installation
 ----------------
 1. Clone this repository
      ```
-    git clone https://github.com/314pies/Taiwan-receipt-lottery-statistic/edit/master/README.md
+    git clone https://github.com/314pies/Taiwan-receipt-lottery-statistic/
     ```
 2. Setup a Python 3 environment and install all the dependency listed in requirements.txt
     ```
