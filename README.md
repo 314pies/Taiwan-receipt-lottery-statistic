@@ -9,7 +9,11 @@ Showcase
 ----------
 ![](https://raw.githubusercontent.com/314pies/Taiwan-receipt-lottery-statistic/master/Showcase.gif)
 
-Try it Yourself: https://tw-lottery-statistic.appspot.com/
+Google App Engine Deploy Link: https://tw-lottery-statistic.appspot.com/
+
+
+*Updated: 
+Unfortunately, due to the source website being offline, this Web App is no longer working :(. The above gif is a recorded demonstration showing how it used to work.*
 
 
 Installation
